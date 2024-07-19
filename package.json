@@ -4,6 +4,7 @@
   "description": "Add a border with rounded corners to png images",
   "main": "index.js",
   "devDependencies": {
+    "dotenv": "^16.4.5",
     "gm": "^1.25.0"
   },
   "type": "module"

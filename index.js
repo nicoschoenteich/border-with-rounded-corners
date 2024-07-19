@@ -1,12 +1,13 @@
+import "dotenv/config"
 import fs from "fs"
 import gm from "gm"
 
-const folderPath = "<replace>"
+const folderPath = process.env.folderPath
 const maskPath = folderPath + "mask.png"
 const borderColor = "black"
-const borderWidth = 3
+const borderWidth = 1
 const borderWidth2 = borderWidth * 2
-const borderRadius = 29
+const borderRadius = 31
 
 const main = async (file) => {
 	const filePath = folderPath + file
@@ -34,7 +35,7 @@ const main = async (file) => {
 			})
 	})
 
-	// apply mask with rounded corners on original image
+	// apply mask with rounded corner on original image
 	await new Promise((resolve, reject) => {
 		gm(filePath)
 			.compose("CopyOpacity")
