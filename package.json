@@ -1,0 +1,10 @@
+{
+  "name": "border-with-rounded-corners",
+  "version": "0.0.1",
+  "description": "Add a border with rounded corners to png images",
+  "main": "index.js",
+  "devDependencies": {
+    "gm": "^1.25.0"
+  },
+  "type": "module"
+}
