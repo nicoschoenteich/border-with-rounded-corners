@@ -34,7 +34,7 @@ const main = async (file) => {
 			})
 	})
 
-	// apply mask with rounded corner on original image
+	// apply mask with rounded corners on original image
 	await new Promise((resolve, reject) => {
 		gm(filePath)
 			.compose("CopyOpacity")
